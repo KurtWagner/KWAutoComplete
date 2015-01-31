@@ -9,11 +9,6 @@ describe('Test setupDefaultInputElement', function() {
 		this.inputElement.style.left = 100; 
 		this.inputElement.style.background = 'black';
 	});
-	it('sets position to absolute', function() {
-		this.inputElement.style.position = 'fixed';
-		setupDefaultInputElement(this.inputElement);
-		expect(this.inputElement.style.position).toBe('absolute');	
-	});
 	it('sets position top to zero', function() {
 		this.inputElement.style.top = '1px';
 		setupDefaultInputElement(this.inputElement);
@@ -71,6 +66,11 @@ describe('Test createAutoCompleteElement', function() {
 		var element = createAutoCompleteElement(this.inputElement);
 		expect(element.style.opacity).toBe('0.4');
 	});
+	it('sets position to absolute', function() {
+		this.inputElement.style.position = 'fixed';
+		var element = createAutoCompleteElement(this.inputElement);
+		expect(element.style.position).toBe('absolute');	
+	});
 	it('clones and sets disabled to true', function() {
 		var element = createAutoCompleteElement(this.inputElement);
 		expect(element.getAttribute('disabled')).toBe('disabled');
@@ -104,14 +104,14 @@ describe('Test createParentElement', function() {
 	beforeEach(function() {
 		this.inputElement = document.createElement('input');
 	});
-	it('creates parent with position set to from element', function() {
+	it('creates parent with position set to from element or default "relative"', function() {
 		delete this.inputElement.style.position;
 		var parentElement = createParentElement(this.inputElement);
-		expect(parentElement.style.position).toBe(this.inputElement.style.position);
+		expect(parentElement.style.position).toBe('relative');
 		
-		this.inputElement.style.position = 'relative';
+		this.inputElement.style.position = 'static';
 		var parentElement = createParentElement(this.inputElement);
-		expect(parentElement.style.position).toBe('relative');	
+		expect(parentElement.style.position).toBe('static');	
 	});
 });
 

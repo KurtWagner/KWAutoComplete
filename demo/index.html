@@ -4,22 +4,34 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 	<title>KWSuggest - kw-suggest.js - DEMO</title>
 	<style>
-	.my-input {   
+	.my-input-a {   
 		border: 1px solid #ccc;
 		padding: 10px;
 		font-size: 70px;
 		font-family: Arial, Helvetica, sans-serif;
 		margin: 20px;
 	}
+	.my-input-b {   
+		border: 1px solid #ccc;
+		padding: 4px;
+		font-size: 15px;
+		font-family: Arial, Helvetica, sans-serif;
+		margin: 20px;
+	}
 	</style>
 </head>
 <body>
-	<input id="main" class="my-input" style="font-weight:bold" type="text" />
+	<h1>Demo KWSuggest</h1>
+	<input id="demo-a" class="my-input-a" style="font-weight:bold" type="text" />
+	<input id="demo-b" class="my-input-b" type="text" />
 	
 	<script src="../dist/kw-suggest.min.js" type="text/javascript"></script>
 	<script>
-		KW.suggest('#main', function(text) {
+		KW.suggest('#demo-a', function(text) {
 			return text;
+		});
+		KW.suggest('#demo-b', function() {
+			return 'suggestion';
 		});
 	</script>
 </body>

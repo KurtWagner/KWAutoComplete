@@ -18,7 +18,6 @@
 	 * @param {HTMLElement} input -
 	 */
 	var setupDefaultInputElement = function(input) {
-		input.style.position = 'absolute';
 		input.style.top = '0px'; 
 		input.style.left = '0px'; 
 		input.style.background = 'transparent';
@@ -50,6 +49,7 @@
 		setupDefaultInputElement(element);
 		element.style['z-index'] = fromElement.style['z-index'] - 1;
 		element.style.opacity = 0.4;
+		element.style.position = 'absolute';
 		element.setAttribute('disabled','disabled');
 		
 		var fromElementId = element.getAttribute('id');
@@ -69,7 +69,7 @@
 	 */
 	var createParentElement = function(fromElement) {
 		var parent = document.createElement('div');
-		parent.style.position = fromElement.style.position;
+		parent.style.position = fromElement.style.position || 'relative';
 		return parent;
 	};
 	
