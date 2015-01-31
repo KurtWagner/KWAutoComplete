@@ -1,8 +1,8 @@
-# KWAutoComplete
+# KWSuggest
 
 Simple HTML input suggest text.
 
-![](https://github.com/KurtWagner/KWAutoComplete/blob/master/demo/demo.gif "KWTransitionStyleBounceIn")
+![](https://github.com/KurtWagner/KWAutoComplete/blob/master/demo/demo.gif "KWSuggest")
 
 ## Installation
 
