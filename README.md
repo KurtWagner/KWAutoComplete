@@ -1,8 +1,8 @@
-# KWAutoComplete
+# KWSuggest
 
 Simple HTML input suggest text.
 
-![](https://github.com/KurtWagner/KWAutoComplete/blob/master/demo/demo.gif "KWTransitionStyleBounceIn")
+![](https://github.com/KurtWagner/KWSuggest/blob/master/demo/demo.gif "KWTransitionStyleBounceIn")
 
 ## Installation
 
@@ -31,5 +31,5 @@ See demo folder for sample in action.
 
 ## TODO
 
-1. Implement `kw-suggest-angular.js` as per [issue](https://github.com/KurtWagner/KWAutoComplete/issues/1).
+1. Implement `kw-suggest-angular.js` as per [issue](https://github.com/KurtWagner/KWSuggest/issues/1).
 2. Finish off tests
