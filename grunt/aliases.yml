@@ -1,0 +1,19 @@
+'default':
+ - 'build'
+'build':
+ - 'strip_code:dist'
+ - 'uglify:dist'
+'test':
+ - 'karma:testPhantomJS'
+'test:watch':
+ - 'karma:watchPhantomJS'
+'test:chrome':
+ - 'karma:testChrome'
+'test:chrome:watch':
+ - 'karma:watchChrome'
+'test:firefox':
+ - 'karma:testFirefox'
+'test:firefox:watch':
+ - 'karma:watchFirefox'
+'test:manual':
+ - 'karma:watchNoBrowser'

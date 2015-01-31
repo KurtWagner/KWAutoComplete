@@ -1,0 +1,12 @@
+{
+  "name": "kw-auto-complete",
+  "version": "1.0.0",
+  "authors": [
+    "Kurt Wagner"
+  ],
+  "main": "dist/*.js",
+  "ignore": [
+    "**/.*",
+    "node_modules"
+  ]
+}
