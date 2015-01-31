@@ -2,7 +2,7 @@
  * @file KWSuggest  - Auto complete / suggested text input
  * @author Kurt Wagner
  * @copyright Kurt Wagner
- * @version 1.0.1
+ * @version 1.0.2
  * @license MIT
  */
 
