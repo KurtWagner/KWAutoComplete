@@ -5,8 +5,8 @@ module.exports = {
         dist: {
                 options: { sourceMap : true, preserveComments : 'some' },
                 files: [{
-                        dest: 'dist/kw-auto-complete.min.js',
-                        src: ['dist/kw-auto-complete.js'],
+                        dest: 'dist/kw-suggest.min.js',
+                        src: ['dist/kw-suggest.js'],
                         nonull: true
                 }]
         }

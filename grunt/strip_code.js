@@ -5,8 +5,8 @@ module.exports = {
         },
         dist: {
                 files: [{
-                        src: 'src/kw-auto-complete.js',
-                        dest: 'dist/kw-auto-complete.js'
+                        src: 'src/kw-suggest.js',
+                        dest: 'dist/kw-suggest.js'
                 }]
         }
 };

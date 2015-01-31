@@ -1,6 +1,6 @@
 {
-  "name": "kw-auto-complete",
-  "version": "1.0.0",
+  "name": "kw-suggest",
+  "version": "1.0.1",
   "authors": [
     "Kurt Wagner"
   ],

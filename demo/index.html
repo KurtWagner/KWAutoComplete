@@ -2,7 +2,7 @@
 <html>
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-	<title>KWAutoComplete - kw-auto-complete.js - DEMO</title>
+	<title>KWAutoComplete - kw-suggest.js - DEMO</title>
 	<style>
 	.my-input {   
 		border: 1px solid #ccc;
@@ -16,9 +16,9 @@
 <body>
 	<input id="main" class="my-input" style="font-weight:bold" type="text" />
 	
-	<script src="../dist/kw-auto-complete.min.js" type="text/javascript"></script>
+	<script src="../dist/kw-suggest.min.js" type="text/javascript"></script>
 	<script>
-		KW.autoComplete('#main', function(text) {
+		KW.suggest('#main', function(text) {
 			return text;
 		});
 	</script>

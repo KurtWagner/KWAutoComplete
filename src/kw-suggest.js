@@ -1,8 +1,8 @@
 /**
- * @file KWAutoComplete - Auto complete / suggested text input
+ * @file KWSuggest  - Auto complete / suggested text input
  * @author Kurt Wagner
  * @copyright Kurt Wagner
- * @version 1.0.0
+ * @version 1.0.1
  * @license MIT
  */
 
@@ -85,7 +85,7 @@
 		autoCompleteElement.value = inputElement.value + suggestion;   
 	};
 
-	KW.autoComplete = function(selector, suggestionBuilder) {
+	KW.suggest = function(selector, suggestionBuilder) {
 		// we require a suggestion builder function
 		if (typeof suggestionBuilder !== 'function') {
 			throw new Error('suggestionBuilder must be a function');
