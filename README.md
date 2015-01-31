@@ -1,8 +1,8 @@
 # KWSuggest
 
-Simple HTML input suggest text.
+Simple customisable HTML input suggest text.
 
-![](https://github.com/KurtWagner/KWSuggest/blob/master/demo/demo.gif "KWTransitionStyleBounceIn")
+![](https://github.com/KurtWagner/KWSuggest/blob/master/demo/demo.gif "KWSuggest")
 
 ## Installation
 
@@ -23,7 +23,7 @@ HTML:
 JS:
 
     KW.suggest('#main', function(text) {
-        console.log(text); // prints input value
+        console.log(text); // prints input's value
         return 'suggested text';         
     });
     
